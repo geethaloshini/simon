@@ -1,0 +1,187 @@
+body{
+    background-color: rgb(19, 0, 19);
+    color: white;
+    font-family: "Chakra Petch", sans-serif;
+}
+h1{
+    text-align: center;
+    font-size: 4rem;
+}
+h2{
+    text-align: center;
+    font-size: 3rem;
+}
+h3{
+    text-align: center;
+    font-size: 2.5rem;
+}
+ol,ul{
+    font-size: 2rem;
+    line-height: 1.5;
+}
+li{
+    margin-left:2em;
+}
+.home p{
+    font-size: 3rem;
+    text-align: center;
+    background-image: linear-gradient(to right,red,blue,green,yellow);
+    -webkit-background-clip: text;
+    color:transparent;
+    position: relative;
+    animation: button 1s ease forwards;
+} 
+.play{
+    border: 3px solid white;
+    border-radius: 20px;
+    padding: 10px 30px;
+    color: white;
+    box-shadow: 2px 5px 10px gray;
+    background-color: rgb(0, 0, 0);
+    display: block;
+    margin:auto;
+    font-size: 2rem;
+    font-family: "Chakra Petch", sans-serif;
+    margin-bottom: 75px;
+}
+.rules_btn,.tips_btn{
+    border: 3px solid white;
+    border-radius: 20px;
+    padding: 10px 30px;
+    color: white;
+    box-shadow: 2px 5px 10px gray;
+    background-color: rgb(0, 0, 0);
+    display: block;
+    margin:auto;
+    font-size: 2rem;
+    font-family: "Chakra Petch", sans-serif;
+    margin-bottom: 50px;
+} 
+.ok_btn1,.ok_btn2{
+    border: 3px solid white;
+    border-radius: 20px;
+    padding: 10px 30px;
+    color: white;
+    box-shadow: 2px 5px 10px gray;
+    background-color: rgb(0, 0, 0);
+    display: block;
+    margin:auto;
+    font-size: 2rem;
+    font-family: "Chakra Petch", sans-serif;
+} 
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
+.tips{
+    display: none;
+    font-size: 2rem;
+    font-family: "Chakra Petch", sans-serif;
+    margin:160px 20px;
+    background-color: black;
+    padding: 20px;
+    border-radius: 20px;
+}
+.rules{
+    display: none;
+    font-size: 2rem;
+    font-family: "Chakra Petch", sans-serif;
+    margin: 20px;
+    background-color: rgb(0,0,0);
+    padding: 20px;
+    border-radius: 20px;
+}
+@keyframes play_btn{
+    0%{
+        padding: 10px 30px;
+    }
+    50%{
+        padding: 10px 40px;
+    }
+    100%{
+        padding: 10px 30px;
+    }
+}
+#color_container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+
+#red{
+   background-color: red;
+   height: 250px;
+   width: 250px;
+   border-radius: 20px;
+   
+}
+#blue{
+    background-color: blue;
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+    
+ }
+ #yellow{
+    background-color: yellow;
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+    
+ }
+ #green{
+    background-color: green;
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+    
+ }
+ #game{
+    display: none;
+ }
+ #game p{
+    text-align: center;
+ }
+ .home h1{
+    position: relative;
+    animation: head 1s ease forwards;
+ }
+ @keyframes head {
+    0% {
+        transform: translateX(-1000px); /* Use transform for smoother animations */
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.home h2{
+    position: relative;
+    animation: head2 1s ease forwards;
+ }
+ @keyframes head2 {
+    0% {
+        transform: translateX(1000px); /* Use transform for smoother animations */
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 0.5;
+    }
+}
+.home button{
+    position: relative;
+    animation: button 1s ease forwards,play_btn 2s infinite forwards;
+}
+@keyframes button {
+    0% {
+        transform: translateY(1000px); /* Use transform for smoother animations */
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

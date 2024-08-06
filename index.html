@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="home">
+        <h1>SIMON GAME</h1>
+        <h2>Test your memory and see how far you can go!</h2>
+        <button class="play">Press here to start</button>
+        <div class="buttons">
+            <button class="rules_btn">Rules for the Game</button>
+            <button class="tips_btn">Tips for success</button>
+        </div>
+        <p>Good luck, and have fun challenging your memory with Simon!</p>
+    </div>
+    <div class="tips">
+        <h3>Tips for success</h3>
+        <ul>
+            <li>Stay Focused: Pay close attention to each sequence. It helps to mentally rehearse each step before pressing the buttons.</li>
+            <li>Practice Makes Perfect: The more you play, the better your memory will become.</li>
+        </ul>
+        <button class="ok_btn1">OK</button>
+    </div>
+    <div class="rules">
+        <h3>Rules for the game</h3>
+        <ol>
+            <li>Start the Game:
+                <ul> 
+                    <li>
+                        Press the ENTER button to begin. SIMON will give you the first signal
+                    </li>
+                </ul>  
+            </li>
+            <li>Repeat the Signal:
+                <ul> 
+                <li>
+                    Once SIMON gives a signal, replicate it by pressing the corresponding button.
+                </li>
+                </ul>  
+        </li>
+        <li>Sequence Expansion:
+                <ul> 
+                    <li>
+                        After you correctly repeat the signal, SIMON will add a new signal to the sequence.
+                    </li>
+                    <li>
+                        You will now need to repeat the entire sequence, including the new addition.
+                    </li>
+                </ul>  
+        </li>
+        <li>Keep Going:
+                    <ul> 
+                        <li>
+                            SIMON will continue to add one new signal to the sequence each time you successfully replicate it.
+                        </li>
+                        <li>
+                            Your task is to remember and repeat the increasingly longer sequence.
+                        </li>
+                    </ul>  
+            </li>
+            <li>Winning the Game:
+                <ul> 
+                    <li>
+                        The game continues as long as you can correctly repeat the sequence.
+                    </li>
+                    <li>
+                        The maximum level to win is 10. Can you reach it?
+                    </li>
+                </ul>  
+            </li>
+        </ol>
+        <button class="ok_btn2">OK</button>
+    </div>
+    <div id="game">
+        <h1 id="status">Press Enter to start!</h1>
+        <p>Press x to go back!</p>
+        <div id="color_container">
+        <button id="red" class="button"></button>
+        <button id="green" class="button"></button>
+        <button id="blue" class="button"></button>
+        <button id="yellow" class="button"></button>
+        </div>
+    </div>
+</body>
+</html>
