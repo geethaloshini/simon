@@ -30,7 +30,7 @@ const delay = ms => new Promise(res => setTimeout(res, ms));
 document.addEventListener("keydown", async function(event) {
     if (event.key === "Enter" && document.getElementById("game").style.display==="block") {
         document.querySelector("#game p").style.display = "none";
-            let start = new Audio('../sounds/game-start.mp3');
+            let start = new Audio('sounds/game-start.mp3');
             start.play();
             await delay(1000);
             startGame()
@@ -42,10 +42,10 @@ let user_generated_pattern = [];
 let computer_generated_pattern = [];
 let level = 1;
 const colors = ["red", "blue", "green", "yellow"];
-const red=new Audio("../sounds/red.mp3");
-const blue=new Audio("../sounds/blue.mp3");
-const yellow=new Audio("../sounds/yellow.mp3");
-const green=new Audio("../sounds/green.mp3");
+const red=new Audio("sounds/red.mp3");
+const blue=new Audio("sounds/blue.mp3");
+const yellow=new Audio("sounds/yellow.mp3");
+const green=new Audio("sounds/green.mp3");
 
 async function startGame() {
     user_generated_pattern = [];
@@ -82,7 +82,7 @@ async function check(level) {
         if (user_generated_pattern.length === computer_generated_pattern.length) {
             if (user_generated_pattern.length === 10) {
                 document.getElementById("status").textContent = "Hurrah....You won!";
-                let win = new Audio('../sounds/win.mp3');
+                let win = new Audio('sounds/win.mp3');
                 win.play();
                 await delay(4000);
                 startGame();
@@ -97,7 +97,7 @@ async function check(level) {
         }
     } else {
         document.getElementById("status").textContent = "Sorry, You lost!";
-        let over = new Audio('../sounds/game-over.mp3');
+        let over = new Audio('sounds/game-over.mp3');
         over.play();
         await delay(4000);
            startGame();
