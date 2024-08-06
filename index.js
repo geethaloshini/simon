@@ -26,13 +26,13 @@ document.querySelector(".play").onclick = function() {
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-import start from '../sounds/game-start.mp3';
+
 const delay = ms => new Promise(res => setTimeout(res, ms));
 document.addEventListener("keydown", async function(event) {
     if (event.key === "Enter" && document.getElementById("game").style.display==="block") {
         document.querySelector("#game p").style.display = "none";
         
-            let start = new Audio(start);
+            let start = new Audio('../sounds/game-start.mp3');
             start.play();
             await delay(1000);
             startGame()
